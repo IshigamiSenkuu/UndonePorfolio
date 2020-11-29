@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+    margin: 0px;
+}
+.main-s1{
+    height: 100vh;
+    border: solid 1px red;
+    margin: 100px;
+    background-color: green;
+    
+}
+.s2{
+    height: 100vh;
+    border: solid 1px blue;
+    background-color: pink;
+}
+.s3{
+    height: 100vh;
+    border: solid 1px pink;
+    background-color: lightgray;
+    margin: 0px;
+}
+
+.grid-centering {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px red;
+    margin-top: 200px;
+    gap: 2rem;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2rem;
+    width: 1000px;
+}
+.grid-container > div{
+    padding: 10px; 
+    border: 1px solid red;
+    text-align: center;
+    border-radius: 30%;
+}
+.grid-container > div:nth-child(odd) {
+  background-color: lightgray;
+}
+.fota {
+    display: flex;
+    background-color: darkgray;
+    justify-content: center;
+    
+}
+</style>
+</head>
+<body>
+
+    
+<section class="main-s1">
+    
+</section>
+<section class="main-s1 s2">
+
+</section>
+<section class="main-s1 s3"> 
+    <div class="grid-centering">
+        <div><h1>askjdfhkasjdhf</h1></div>
+        <div class="grid-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>       
+    </div> 
+</section>
+<footer class="fota">
+    <div>sdfasdf</div>
+    <div>sdfasdf</div>
+    <div>sdfasdf</div>
+    <div>sdfasdf</div>
+    <div>sdfasdf</div> 
+</footer>
+</body>
+</html>
